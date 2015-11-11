@@ -54,7 +54,7 @@ public void setCommissionRate(double commissionRate) {
 			}
 			
 			public String toString(){
-				return String.format("%s%nis a comission employee.%nwith the gross sales: $%,.2f and the commission rate: .2f ", super.toString(),getGrossSales(), getCommissionRate());
+				return String.format("%s: %s.%nwith the gross sales: $%,.2f and the commission rate: .2f ", "Comission employee", super.toString(),getGrossSales(), getCommissionRate());
 			}
 
 }
