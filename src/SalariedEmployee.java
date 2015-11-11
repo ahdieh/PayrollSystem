@@ -9,7 +9,7 @@ public class SalariedEmployee extends Employee {
 		
 		public SalariedEmployee(String firstName, String lastName, String SSN, double weeklySalary){
 			super(firstName, lastName,SSN);
-			if (this._weeklySalary<0){
+			if (weeklySalary<0){
 				throw new IllegalArgumentException("The weekly salary must be greater than 0");
 			}
 		this._weeklySalary = weeklySalary;
