@@ -8,18 +8,13 @@ public abstract class Employee {
 	
 	// CONSTRUCTOR ++++++++++++++++++++++
 	
-	public Employee(){
-		_initialize("","","");
-	}
-	
-	//PRIVATE METHODS ++++++++++++++++++
-	
-	private void _initialize(String firstName, String lastName, String SSN){
+	public Employee(String firstName, String lastName, String SSN){
 		this._firstName = firstName;
 		this._lastName = lastName;
 		this._SSN = SSN;
 	}
 	
+		
 	//PROPERTIES +++++++++++++++++++++
 	
 	public String getFirstName(){
