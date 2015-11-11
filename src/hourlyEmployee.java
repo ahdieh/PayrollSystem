@@ -28,6 +28,9 @@ public class hourlyEmployee extends Employee {
 	}
 
 	public void setWage(double wage) {
+		if (wage<0){
+			throw new IllegalArgumentException("The wage must be greater than 0");
+		}
 		this._wage = wage;
 	}
 
@@ -36,6 +39,9 @@ public class hourlyEmployee extends Employee {
 	}
 
 	public void setHours(double hours) {
+		if (hours<0){
+			throw new IllegalArgumentException("The number of hours must be greater than 0");
+		}
 		this._hours = hours;
 	}
 	
