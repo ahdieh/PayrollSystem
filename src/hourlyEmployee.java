@@ -57,6 +57,6 @@ public class hourlyEmployee extends Employee {
 			}
 			
 			public String toString(){
-				return String.format("%s%nis a hourly employee.%nwith the hourly wage: $%,.2f worked .2f hours", super.toString(),getWage(), getHours());
+				return String.format("%s: %s%nwith the hourly wage: $%,.2f worked %.2f hours", "Hourly employee", super.toString(),getWage(), getHours());
 			}
 }
